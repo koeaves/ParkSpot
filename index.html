@@ -21,7 +21,7 @@
             <ul>
                 <li class="left" id="temp-place">
                 </li>
-                <li class="left">
+                <li class="left"> <!--this list item and the one below connect to JS to display the info gathered from the weather API--> 
                     <img id="weather-icon" src="" alt="Weather icon">
                 </li>
                 <li class="right" id="wind-place">
@@ -40,15 +40,15 @@
     <div class="section white">
         <div class="row container">
             <div class= "col 12">
-                <p>To see which parks are free, enter your first name, your current location ( street, city, state, zip), 
+                <p>To see which parks are free, enter your first name, your current location (street, city, state, zip), 
                     and click "Local Parks." To get directions on the next page, simply choose your preferred park.</p>
             </div>
-            <div class="input-field col s6">
+            <div class="input-field col s6"> <!--user input is passed through to Firebase -->
                 <i class="material-icons prefix">account_circle</i>
                 <input id="icon_prefix" type="text" class="validate">
                 <label for="icon_prefix"> Name</label>
             </div>
-            <div class="input-field col s6">
+            <div class="input-field col s6"> <!-- the location works with or without commas and with or without zipcode -->
                 <i class="material-icons prefix">my_location</i>
                 <input id="icon_telephone1" type="text" class="validate">
                 <label for="icon_telephone1">Current Location</label>
